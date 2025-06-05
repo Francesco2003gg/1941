@@ -10,7 +10,7 @@ st.set_page_config(
     layout = ['centered','wide'][0], #Alterna 0 e 1 per scegliere il layout
     menu_items = {'About': "# This is a header. This is an *extremely* cool app!"}
 )
-st.logo(r"C:\Users\PICARO\Desktop\Unisa\3-2\Progettazione_del_software\Progetto_BN\Codice\logo.png")
+st.logo("logo.png")
 if "GM" not in st.session_state:
     st.session_state.GM = GameManager()
     st.session_state.country_generate = False
