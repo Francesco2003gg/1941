@@ -10,7 +10,7 @@ st.set_page_config(
     layout = ['centered','wide'][0], #Alterna 0 e 1 per scegliere il layout
     menu_items = {'About': "# This is a header. This is an *extremely* cool app!"}
 )
-st.logo("logo.png")
+st.logo("logo.png", size="large")
 if "GM" not in st.session_state:
     st.session_state.GM = GameManager()
     st.session_state.country_generate = False
@@ -23,7 +23,7 @@ if st.session_state.GM.app_state().get_state() is Access:
         st.write("# 1941 - Il caos sfocia in mare")
         st.write('_By Francesco Picaro_')
     with c2:
-        st.image(r"C:\Users\PICARO\Desktop\Unisa\3-2\Progettazione_del_software\Progetto_BN\Codice\logo.png", width=150)
+        st.image("logo.png", width=150)
     st.write("""
              In un mondo in cui l'attacco a Pearl Harbor ha segnato l'inizio di una *nuova era*,
              e quello di una guerra lontana da ogni immaginazione, tutti i paesi si scontrano
